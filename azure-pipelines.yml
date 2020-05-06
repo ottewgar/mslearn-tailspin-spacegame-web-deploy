@@ -138,7 +138,7 @@ stages:
         projects: '$(System.DefaultWorkingDirectory)/**/*UITests.csproj'
 
 - stage: 'Staging'
-  displayName: 'Deploy to the staging environment'
+  displayName: 'Deploy to the staging / pre-prod environment'
   dependsOn: Test
   jobs:
   - deployment: Deploy
